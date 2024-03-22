@@ -1,7 +1,7 @@
 {
   "expo": {
     "experiments": {
-      "baseUrl" : "/FirstAppReactNative"
+      "baseUrl": "/FirstAppReactNative"
     },
     "name": "web-cloud-ynov",
     "slug": "web-cloud-ynov",
@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mosmos.webcloudynov"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b974c61f-4e0d-4a4b-8c7b-cdd5ee2e52a5"
+      }
+    },
+    "owner": "mosmos"
   }
 }
