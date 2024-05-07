@@ -27,14 +27,20 @@
       },
       "package": "com.mosmos.webcloudynov"
     },
+    "scheme": "web-cloud-ynov",
     "web": {
-      "favicon": "./assets/favicon.png"
-    },
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+      },
     "extra": {
       "eas": {
         "projectId": "b974c61f-4e0d-4a4b-8c7b-cdd5ee2e52a5"
       }
     },
-    "owner": "mosmos"
+    "owner": "mosmos",
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

@@ -1,0 +1,21 @@
+[debug] [2024-03-22T10:43:13.667Z] ----------------------------------------------------------------------
+[debug] [2024-03-22T10:43:13.670Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-22T10:43:13.671Z] CLI Version:   13.5.2
+[debug] [2024-03-22T10:43:13.671Z] Platform:      win32
+[debug] [2024-03-22T10:43:13.671Z] Node Version:  v20.11.1
+[debug] [2024-03-22T10:43:13.671Z] Time:          Fri Mar 22 2024 11:43:13 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2024-03-22T10:43:13.672Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-22T10:43:13.678Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-22T10:43:13.679Z] > authorizing via signed-in user (mustaphaithamou@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Mosmos\Documents\FirstAppReactNative\web-cloud-ynov
+
