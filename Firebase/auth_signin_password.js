@@ -1,5 +1,6 @@
 import "../firebaseConfig";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { router } from "expo-router";
 
 const auth = getAuth();
 
@@ -9,14 +10,15 @@ export const signin = (email, password) => {
       const user = userCredential.user;
       console.log(user);
       console.log("signin success");
-      showToast("Connexion réussie !");
+      router.navigate('/profile');
+      showToast("Connexion réussie !");      
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(error);
       showToast("Erreur de connexion : " + errorMessage);
-    });
+    });    
 };
 const showToast = (message) => {
   const toaster = document.getElementById("toaster");

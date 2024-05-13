@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleSheet, Text, View, TextInput, Button, Pressable } from 'react-native';
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import { signup } from "../Firebase/auth_signup_password.js";
 import { loginWithPhoneNumber } from "../Firebase/auth_phone_signin.js";
 import { verifyCode } from "../Firebase/auth_phone_verify_code.js";
@@ -10,6 +10,10 @@ export default function App() {
   const [password, onChangePassword] = React.useState(""); 
   const [phoneNumber, onChangePhoneNumber] = React.useState("");
   const [code, onChangeCode] = React.useState("");
+
+  router.replace('/');
+  showToast("Inscription réussie !");
+
   return (
     <View style={styles.container}>
       <Text>Email</Text>

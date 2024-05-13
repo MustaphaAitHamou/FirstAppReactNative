@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../firebaseConfig"
-import { Text, StyleSheet, View, Button, Image } from "react-native";
+import { Text, StyleSheet, TextInput, View, Button, Image } from "react-native";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import * as ImagePicker from 'expo-image-picker';
 import { uploadToFirebase } from "../Firebase/storage_upload_file";
@@ -69,6 +69,11 @@ export default function Profile() {
                     />
                     <Button title="Pick an image from camera roll" onPress={pickImage} />
                     {image && <Image source={{ uri: image }} style={styles.image} />}
+                    
+                    <TextInput>
+
+                    </TextInput>
+
                 </View>
                 :
                 <View style={styles.container}>

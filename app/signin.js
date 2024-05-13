@@ -10,6 +10,7 @@ export default function App() {
   const [password, onChangePassword] = React.useState(""); 
   const [phoneNumber, onChangePhoneNumber] = React.useState("");
   const [code, onChangeCode] = React.useState("");
+  
   return (
     <View style={styles.container}>
       <Text>Email</Text>
@@ -35,8 +36,9 @@ export default function App() {
       onChangeText={onChangePhoneNumber}
       value={phoneNumber}
       ></TextInput>
-      <Pressable id="sign-in-button-phone" onPress={() => loginWithPhoneNumber(phoneNumber)} style = {styles.button}>
+      <Pressable id="sign-in-button-phone" onPress={() => loginWithPhoneNumber(phoneNumber)} style = {styles.button} >
         <Text>Sign In with phone</Text>
+        
       </Pressable>
       <div id="recaptcha-container"></div>
       <Text>Code</Text>
