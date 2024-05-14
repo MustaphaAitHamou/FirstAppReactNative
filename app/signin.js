@@ -54,9 +54,9 @@ export default function App() {
 
       <Text>Github</Text>
 
-<Pressable id="sign-in-button-phone" onPress={() => signinWithGithub} style = {styles.button} >
-  <Text>Sign In with Github</Text>
-</Pressable>
+      <Pressable onPress={() => signinWithGithub()} style = {styles.button}>
+        <Text>Sign In with Github</Text>
+      </Pressable>
     </View>
   );
 }
