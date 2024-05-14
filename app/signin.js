@@ -4,6 +4,7 @@ import { Link } from "expo-router";
 import { signin } from "../Firebase/auth_signin_password.js";
 import { loginWithPhoneNumber } from "../Firebase/auth_phone_signin.js";
 import { verifyCode } from "../Firebase/auth_phone_verify_code.js";
+import { signinWithGithub } from "../Firebase/auth_github_signin_popup.js";
 
 export default function App() {
   const [email, onChangeEmail] = React.useState("");
@@ -29,7 +30,6 @@ export default function App() {
       <Link href="signup">Pas encore de compte ? Inscrivez-vous !</Link>
       <Button title="Sign In!" onPress={() => signin(email, password)} />
 
-      <Text>___Phone___</Text>
       <Text>Phone number</Text>
       <TextInput
       style={styles.input}
@@ -38,8 +38,9 @@ export default function App() {
       ></TextInput>
       <Pressable id="sign-in-button-phone" onPress={() => loginWithPhoneNumber(phoneNumber)} style = {styles.button} >
         <Text>Sign In with phone</Text>
-        
       </Pressable>
+
+
       <div id="recaptcha-container"></div>
       <Text>Code</Text>
       <TextInput
@@ -50,6 +51,12 @@ export default function App() {
       <Pressable onPress={() => verifyCode(code)} style = {styles.button}>
         <Text>Check code !</Text>
       </Pressable>
+
+      <Text>Github</Text>
+
+<Pressable id="sign-in-button-phone" onPress={() => signinWithGithub} style = {styles.button} >
+  <Text>Sign In with Github</Text>
+</Pressable>
     </View>
   );
 }

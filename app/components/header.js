@@ -51,21 +51,31 @@ export default function Header() {
     }
 
 
-
-const styles = StyleSheet.create({
-    container: {
-      flexDirection: 'row',  // Align items in a horizontal row
-      justifyContent: 'space-evenly',  // Even spacing of links across the navbar
-      alignItems: 'center',  // Center items vertically
-      height: 60,  // Fixed height for the navbar
-      backgroundColor: '#2C3E50',  // Dark shade for the navbar background
-      paddingTop: 10,  // Padding top to avoid overlap with the device status bar
-    },
-    link: {
-      color: '#FFFFFF',  // White color for link text for better visibility
-      fontSize: 16,  // Font size for readability
-      fontWeight: 'bold',  // Bold font weight to make the links pop out
-      paddingVertical: 10,  // Padding to increase touch area and comfort
-      paddingHorizontal: 15,  // Horizontal padding for visual spacing
-    },
-  });
+    const styles = StyleSheet.create({
+      container: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        height: 60,
+        backgroundColor: '#2C3E50',
+        paddingTop: 10,
+      },
+      link: {
+        color: '#BBBBBB',  // Light grey for inactive links
+        fontSize: 16,
+        fontWeight: 'bold',
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+      },
+      activeLink: {
+        color: '#FFFFFF',  // White for active link
+        fontSize: 16,
+        fontWeight: 'bold',
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+      },
+      logoutButton: {
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+      }
+    });

@@ -34,33 +34,41 @@ useEffect(() => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FAF9F6',  // Soft cream background for a gentle feel
-    padding: 20,  // Padding around the container for spacing
+    backgroundColor: '#FAF9F6',  // Soft cream color for a gentle and calming background
+    padding: 20,  // Padding around the container to give content a spacious feel
+    alignItems: 'center',  // Align items in the center to ensure a tidy layout
   },
   item: {
-    backgroundColor: '#FFFFFF',  // White background for each item for clarity
-    borderRadius: 8,  // Rounded corners for a modern look
-    padding: 15,  // Padding within each item for layout
-    marginVertical: 10,  // Vertical spacing between items
-    shadowColor: '#000',  // Shadow color
-    shadowOffset: { width: 0, height: 2 },  // Shadow offset for a slight elevation effect
-    shadowOpacity: 0.1,  // Subtle shadow for depth
-    shadowRadius: 6,  // Soft shadow spread
-    elevation: 3,  // Elevation for Android
+    backgroundColor: '#FFFFFF',  // Pure white background for each post item to enhance readability
+    borderRadius: 10,  // Smooth rounded corners for a modern and friendly look
+    padding: 20,  // Generous padding within each item to create a distinct and tactile area for interaction
+    marginVertical: 12,  // Sufficient vertical margin between items to avoid visual clutter
+    shadowColor: '#000',  // Black shadow for contrast and visibility
+    shadowOffset: { width: 0, height: 4 },  // Shadow offset for a subtle elevation effect
+    shadowOpacity: 0.15,  // Slightly stronger shadow opacity for depth without overpowering
+    shadowRadius: 8,  // Increased radius for a softer shadow spread
+    elevation: 5,  // Elevated visual effect for Android devices
   },
   itemTitle: {
-    fontSize: 18,  // Larger font size for titles for emphasis
-    fontWeight: 'bold',  // Bold font weight for the titles
-    color: '#333',  // Dark gray for high contrast and readability
-    marginBottom: 5,  // Margin below the title for separation
+    fontSize: 20,  // Slightly larger font size for clear title visibility
+    fontWeight: '600',  // Medium-bold weight to emphasize title without dominating
+    color: '#333333',  // Dark gray for solid readability against the white background
+    marginBottom: 8,  // Defined space below the title to separate from text cleanly
   },
   link: {
-    padding: 10,  // Padding for the link for easier tapping
-    marginTop: 10,  // Margin top for spacing from welcome text
-    color: '#1E90FF',  // Bright blue color for the link for visibility
-    fontSize: 16,  // Font size for the link
-    fontWeight: 'bold',  // Bold font weight for the link
-    textAlign: 'center',  // Center text alignment for the link
+    backgroundColor: '#E2E8F0',  // Light gray background for the link button to differentiate from other text
+    paddingVertical: 12,  // Vertical padding to increase touch target size
+    paddingHorizontal: 20,  // Horizontal padding to maintain a balanced look
+    marginTop: 15,  // Top margin to separate from other elements
+    borderRadius: 5,  // Mildly rounded corners for the link for a cohesive design
+    fontSize: 16,  // Appropriate font size for clear legibility
+    fontWeight: 'bold',  // Bold font weight to highlight interactive elements
+    color: '#1E90FF',  // Vivid blue color to indicate interactivity
+    textAlign: 'center',  // Center-aligned text to ensure aesthetic alignment
+    textTransform: 'uppercase',  // Uppercase text for a bit of typographic variety and emphasis
+    shadowColor: '#000',  // Shadow color for the link for slight visual depth
+    shadowOpacity: 0.1,  // Minimal shadow opacity for subtle effect
+    shadowRadius: 3,  // Small shadow radius to keep the button's shadow refined
+    shadowOffset: { width: 0, height: 1 },  // Minimal shadow offset to lift the button visually
   }
 });
-

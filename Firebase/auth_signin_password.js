@@ -10,8 +10,8 @@ export const signin = (email, password) => {
       const user = userCredential.user;
       console.log(user);
       console.log("signin success");
-      router.navigate('/profile');
-      showToast("Connexion réussie !");      
+      showToast("Connexion réussie !"); 
+      router.navigate('/profile');     
     })
     .catch((error) => {
       const errorCode = error.code;
